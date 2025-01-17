@@ -15,8 +15,8 @@
 .services-title h1{
     /* border: 2px solid aqua; */
     padding: 0px 30px;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 60px;
+    font-weight: 600 ;
 }
 
 .services-title img{
@@ -28,7 +28,7 @@
 }
 
 .services-format{
-    border: 2px solid white;
+    border: 2px solid hotpink;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,8 @@
     border-radius: 10px;
     transform: 400ms;
     cursor: pointer;
+    transition: all 700ms ease;
+
 }
 
 .services-container{
@@ -48,16 +50,19 @@
 }
 
 .services-format h3{
-    font-size: 24px;
+    font-size: 45px;
+    color: hotpink;
     font-weight: 600;
 }
 .services-format h2{
-    font-size: 20px;
-    font-weight: 800;
-    background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+    font-size: 23px;
+    color: hotpink;
+
+    font-weight: 400;
+    /* background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 
 }
 
@@ -67,6 +72,8 @@
     font-size: 18px;
     line-height: 30px;
     max-width: 300px;
+    color: hotpink;
+
 }
 .services-readmore
 {
@@ -78,10 +85,10 @@
 }
 
 .services-format:hover{
-    border: 2px solid #ff00ff;
-    background-image: linear-gradient(45deg,#3f0028,#582300);
-    transform: scale(1.05);
-    transition: 400ms;
+    box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.7);
+    background-color: rgb(24, 19, 19); /* Equivalent to hover:bg-lightHover */
+    transform: translateY(-0.25rem) translateX(-0.25rem); /* Equivalent to hover:-translate-y-1 */
+    transition: all 700ms ease;
 }
 
 @media(max-width:768px){

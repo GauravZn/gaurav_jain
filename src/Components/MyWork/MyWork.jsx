@@ -8,8 +8,8 @@ const MyWork = () => {
     return (
         <div id='work' className="mywork">
             <div className="mywork-title">
-                <h1>My Work</h1>
-                <img src={theme_pattern} alt="" />
+                <h1>Projects.</h1>
+                {/* <img src={theme_pattern} alt="" /> */}
             </div>
 
             <div className="mywork-container">
@@ -19,10 +19,10 @@ const MyWork = () => {
                 })}
             </div>
 
-            <div className="mywork-showmore">
+            <a target='_blank' href='https://github.com/gauravzn' className="mywork-showmore">
                 <p>Show more</p>
                 <img src={arrow_icon} alt="" />
-            </div>
+            </a>
         </div>
 
     )

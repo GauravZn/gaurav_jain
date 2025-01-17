@@ -40,10 +40,11 @@
     /* border: 2px solid white; */
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(270deg,#df8908 80%, #b415ff 100%);
+    /* background: linear-gradient(270deg,#df8908 80%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: hotpink;
 }
 
 .contact-left p{
@@ -79,7 +80,9 @@
 }
 
 .contact-right label{
-    color: #d8d8d8;
+    color: hotpink;
+    margin-top: 5px;
+    margin-bottom: -5px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -108,7 +111,7 @@
 }
 
 .contact-submit{
-    border: none;
+    /* border: none;
     color: white;
     border-radius: 50px;
     background: linear-gradient(264deg, #d58908 -5%,  #b415ff 106%);
@@ -116,10 +119,27 @@
     padding: 15px 30px;
     margin-bottom: 50px;
     cursor: pointer;
-    transition: 300ms;
+    transition: 300ms; */
+    border: 1px solid hotpink;
+    padding: 15px 20px;
+    border-radius: 30px;
+    /* background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106%); */
+    cursor: pointer;
+    background: transparent;
+    color: hotpink;
+    font-size: 20px;
 }
-.contact-submit:hover{
+/* .contact-submit:hover{
     transform: scale(1.1);
+} */
+
+.mail_icon{
+    width: 30px;
+}
+.mail_link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
 
 @media(max-width:768px){

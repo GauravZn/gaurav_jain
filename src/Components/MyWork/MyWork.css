@@ -50,6 +50,7 @@
 }
 
 .mywork-showmore {
+    text-decoration: none;
     display: flex;
     gap: 10px;
     border: 2px solid white;
@@ -60,6 +61,7 @@
     margin-bottom: 80px;
     transition: 0.8s;
     cursor: pointer;
+    color: hotpink;
 }
 
 .mywork-showmore:hover {

@@ -8,8 +8,8 @@ const About = () => {
     <div id='about' className='about'>
       
         <div className="about-title">
-            <h1>About me</h1>
-            <img src={theme_pattern} alt="" />
+            <h1>About</h1>
+            {/* <img src={theme_pattern} alt="" /> */}
         </div>
 
         <div className="about-sections">
@@ -18,32 +18,19 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi enim vel possimus eaque!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elinecessitatibus commodi modi cupiditate doloribus?</p>
+                    <p>I am a competitive programmer and a student of Data Structures and Algorithms (DSA) and web development.</p>
+                    <p>I am currently seeking an internship opportunity to further enhance my skills and apply my knowledge in real-world projects.</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS</p> <hr style={{width:"50%"}}/></div>
-                    <div className="about-skill"><p>REACT JS</p> <hr style={{width:"70%"}}/></div>
-                    <div className="about-skill"><p>JavaScript</p> <hr style={{width:"60%"}}/></div>
-                    <div className="about-skill"><p>Next JS</p> <hr style={{width:"50%"}}/></div>
+                    <div className="about-skill"><p>C++</p> <hr style={{width:"60%"}}/></div>
+                    <div className="about-skill"><p>HTML & CSS</p> <hr style={{width:"70%"}}/></div>
+                    <div className="about-skill"><p>JavaScript</p> <hr style={{width:"50%"}}/></div>
+                    <div className="about-skill"><p>React JS</p> <hr style={{width:"60%"}}/></div>
                 </div>
             </div>
         </div>
         <div className="about-achievements">
-            <div className="about-achievement">
-                <h1>10+</h1>
-                <p>YEARS OF EXPERIENCE</p>
-            </div>
-            <hr />
-            <div className="about-achievement">
-                <h1>90+</h1>
-                <p>PROJECTS COMPLETED</p>
-            </div>
-            <hr />
-            <div className="about-achievement">
-                <h1>200+</h1>
-                <p>HAPPY CLIENTS</p>
-            </div>
+
         </div>
     </div>
   )

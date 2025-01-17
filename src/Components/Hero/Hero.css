@@ -19,10 +19,14 @@
 }
 
 .hero h1 span{
-    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    /* background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: hotpink;
+}
+.dwnld{
+    text-decoration: none;
 }
 
 .hero p{
@@ -31,6 +35,8 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .hero-action{
@@ -43,25 +49,32 @@
     margin-bottom: 50px;
 }
 
+.hero-connect a{
+    text-decoration: none;
+    color: hotpink;
+}
 .hero-connect{
-    border: 1px solid transparent;
+    color: hotpink;
+    border: 1px solid hotpink;
     padding: 15px 20px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106%);
+    border-radius: 30px;
+    /* background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106%); */
     cursor: pointer;
+
 }
 
 .hero-resume{
-    border: 2px solid white;
-    border-radius: 50px;
+    border: 2px solid hotpink;
+    border-radius: 30px;
     padding: 15px 40px;
     cursor: pointer ;
 }
-.hero-connect:hover{
+/* .hero-connect:hover{
     border: 1px solid white;
-}
-.hero-resume:hover{
-    border-color:  #b415ff;
+} */
+.hero-resume{
+    /* border-color:  #b415ff; */
+    color: hotpink;
 }
 
 @media(max-width: 768px){
