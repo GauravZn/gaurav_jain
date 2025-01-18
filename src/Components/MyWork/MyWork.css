@@ -1,5 +1,4 @@
 .mywork {
-    /* border: 2px solid pink; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,6 @@
 }
 
 .mywork-title h1 {
-    /* border: 2px solid green; */
     padding: 0px 30px;
     font-size: 60px;
     font-weight: 600;
@@ -27,76 +25,133 @@
 }
 
 .mywork-container {
-    /* border: 2px solid aliceblue; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
+.mywork-container a {
+    position: relative; /* Ensure effects apply correctly */
+    display: inline-block;
+    text-decoration: none; /* Removes underline from links */
+}
+/*
 .mywork-container img {
     width: 100%;
     height: 100%;
-    /* width: 300px; */
-    /* height: 220px; */
-    transition: 0.3s;
+    border-radius: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: filter 0.7s ease, transform 0.7s ease, box-shadow 0.7s ease; /* Smooth hover transitions */
+    /* filter: grayscale(100%) contrast(1); Initial grayscale */
+/* } */
+
+/* .mywork-container img:hover { */
+    /* filter: none; Restore natural colors */
+    /* transform: translateY(-0.25rem) translateX(-0.25rem); Adds subtle movement */
+    /* box-shadow: 4px 4px 0 hotpink; /* Highlight with shadow on hover */
+/* } */ 
+.mywork-container a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.mywork-container img:hover {
-    transform: scale(1.10);
-    border: 4px solid #ff00ff;
+.mywork-container img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover effects */
 }
 
+/* Add hotpink translucent overlay using ::before */
+.mywork-container a::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Covers the entire area of the anchor tag */
+    background-color: rgba(255, 105, 180, 0.5); /* Hotpink color with 50% transparency */
+    border-radius: 10px; /* Matches the image's border radius */
+     /* Smooth transition on hover */
+    opacity: 1; /* Initially visible */
+    pointer-events: none; /* Prevent blocking hover interactions */
+}
+
+/* Remove the hotpink overlay on hover */
+.mywork-container a:hover::before {
+    opacity: 0; /* Makes the overlay disappear */
+}
+
+.mywork-container a:hover img {
+    transform: translateY(-0.25rem) translateX(-0.25rem); /* Adds subtle movement */
+    /* box-shadow: 4px 4px 0 hotpink; Highlight with shadow on hover */
+    border-bottom: 1px solid hotpink;
+    border-right: 1px solid hotpink;
+}
+
+
+/* "Show More" Section */
 .mywork-showmore {
     text-decoration: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    border: 2px solid white;
+    border: 2px solid hotpink;
     border-radius: 50px;
     padding: 20px 40px;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 80px;
-    transition: 0.8s;
-    cursor: pointer;
+    transition: gap 0.3s, transform 0.8s; /* Smooth hover effect */
     color: hotpink;
+    cursor: pointer;
 }
 
 .mywork-showmore:hover {
     gap: 30px;
-    ;
+     /* Lifts button on hover */
 }
 
-@media(max-width:768px) {
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
     .mywork {
         gap: 40px;
         margin: 40px 60px;
         align-items: start;
     }
-    .mywork-title h1{
+    .mywork-title h1 {
         font-size: 40px;
         font-weight: 600;
         padding: 0;
     }
-    .mywork-title img{
+    .mywork-title img {
         width: 130px;
         margin-right: -20px;
     }
-    .mywork-container{
+    .mywork-container {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
-    .mywork-container img{
+    .mywork-container img {
         width: 100%;
         height: 100%;
-
     }
-    .mywork-showmore{
+    .mywork-showmore {
         padding: 10px 20px;
         font-size: 16px;
         margin: 40px auto;
         cursor: pointer;
     }
+}
+
+/* Arrow icon size */
+.more_arrow {
+    width: 22px;
+    transition: transform 0.3s ease; /* Smooth animation on hover */
+}
+
+.mywork-showmore:hover .more_arrow {
+    transform: translateX(5px); /* Slight movement for arrow */
 }

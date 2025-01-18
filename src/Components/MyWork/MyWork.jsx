@@ -1,7 +1,8 @@
 import React from 'react'
 import './MyWork.css'
-import theme_pattern from '../../assets/theme_pattern.svg'
-import mywork_data from '../../assets/mywork_data'
+import job_portal from '../../assets/job_portal_snip.png'
+import todo from '../../assets/todo_snip.png'
+import newsletter from '../../assets/newsletter_snip.png'
 import arrow_icon from "../../assets/arrow_icon.svg";
 
 const MyWork = () => {
@@ -14,14 +15,18 @@ const MyWork = () => {
 
             <div className="mywork-container">
 
-                {mywork_data.map((work,index)=>{
+                {/* {mywork_data.map((work,index)=>{
                     return <img src={work.w_img} key={index} alt=""/>
-                })}
+                })} */}
+                <a href="https://github.com/GauravZn/job-portal" target='_blank'><img src={job_portal}/></a>
+                <a href="https://github.com/GauravZn/newsletter" target='_blank'><img src={newsletter}/></a>
+                <a href="https://github.com/GauravZn/To-Do-List" target='_blank'><img src={todo}/></a>
+                
             </div>
 
             <a target='_blank' href='https://github.com/gauravzn' className="mywork-showmore">
-                <p>Show more</p>
-                <img src={arrow_icon} alt="" />
+                <p>More</p>
+                <img className='more_arrow' src={arrow_icon} alt="" />
             </a>
         </div>
 

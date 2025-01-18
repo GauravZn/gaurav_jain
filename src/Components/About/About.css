@@ -64,16 +64,17 @@
     font-size: 18px;
     font-weight: 300;
 }
-
+ 
 .about-skill hr {
     outline: none;
     border-radius: 50px;
     height: 8px;
     width: 50%;
-    /*border: none;
-    background: linear-gradient(264deg, #df8908 -5%, #b415ff 106%); */
-    background: hotpink;
-}
+    border: none;
+    background: rgba(255, 105, 180, 0.8); 
+ }  
+
+
 
 .about-achievements {
     /* border: 2px solid violet; */
@@ -107,8 +108,8 @@
 }
 
 .about-skill:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    /* transform: scale(1.03); */
+    transition: 0.5s;
 }
 
 .about-achievement:hover {
@@ -180,4 +181,10 @@
         text-align: center;
         font-size: 16px;
     }
+}
+
+.about_profile{
+    width: 20rem;
+    border-radius: 20px;
+    border: 2px solid hotpink;
 }
