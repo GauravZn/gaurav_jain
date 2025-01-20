@@ -58,11 +58,11 @@ const Contact = () => {
 
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">name.</label>
-          <input id='name' type="text"  name='Name' />
+          <input id='name' type="text"  name='Name' required/>
           <label htmlFor="">mail.</label>
-          <input id='email' type="email" name='Email' />
+          <input id='email' type="email" name='Email' required />
           <label htmlFor="">message.</label>
-          <textarea id='message' name="Message" rows="8" ></textarea>
+          <textarea id='message' name="Message" rows="8" required ></textarea>
           <button type='submit' className="contact-submit">send</button>
         </form>
       </div>

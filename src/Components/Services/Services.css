@@ -105,17 +105,36 @@
         width: 130px;
         margin-right: 0px;
     }
+    .services-container{
+        gap: 2vw;
+    }
     .services-format{
-        gap: 10px;
+        
+        margin-left: 20px;
+        margin-top: 10px;
         padding: 20px;
+        /* font-size: 10px; */
+        height: 180px;
+        width: 40vw;
+        overflow-x: scroll;
+        color: white;
+    }
+    .services-format h3{
+        padding-top:200px;
+        color: white;
+        font-size: 30px;
     }
     .services-format h2{
-        font-size: 24px;
+        /* font-weight: bold; */
+        
+        color: white;
+        font-size: 20px;
     }
     .services-format p{
         font-size: 16px;
-        line-height: 30px;
+        line-height: 25px;
         max-width: 200px;
+        color: white;
     }
     .services-readmore img{
         width: 20px;

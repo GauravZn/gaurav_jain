@@ -155,7 +155,9 @@
     }
 
     .about-skill p {
+        margin-top: -5px;
         font-size: 16px;
+        margin-right: -10px;
     }
 
     .about-skill hr {
