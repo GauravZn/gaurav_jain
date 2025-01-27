@@ -11,7 +11,7 @@ const Hero = () => {
       <p>Competitive programmer, DSA learner, and web development enthusiast, looking for an internship to apply my skills.</p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink offset={50} href='#contact'>Get in Touch</AnchorLink></div>
-        <a className='dwnld' href="../../assets/Gaurav_Resume.pdf" download="Gaurav_Resume.pdf">
+        <a className='dwnld' href="../../assets/Gaurav_Resume.pdf" download>
          
           <div className="hero-resume">Resume</div>
         </a>
